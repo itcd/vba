@@ -11,14 +11,14 @@ Sub LoopThroughFiles()
     Dim filename As String
     filename = Dir(Application.ActiveWorkbook.Path & "\*.txt")
     Do While Len(filename) > 0
-        'MsgBox (filename)
-        
         ' add a worksheet
         ActiveWorkbook.Sheets.Add After:=Worksheets(Worksheets.Count)
         
+        'MsgBox (LCase(filename))
+        
         ' remove extension from filename
         Dim filename_no_suffix As String
-        filename_no_suffix = Left(filename, InStr(filename, ".txt") - 1)
+        filename_no_suffix = Left(filename, InStr(LCase(filename), ".txt") - 1)
         ActiveWorkbook.ActiveSheet.Name = filename_no_suffix & Format(Now(), " hhmmss")
         
         ' import text file
