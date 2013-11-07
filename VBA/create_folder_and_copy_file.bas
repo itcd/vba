@@ -46,6 +46,7 @@ Attribute CopyFile.VB_ProcData.VB_Invoke_Func = "q\n14"
             Dim fso
             Set fso = CreateObject("Scripting.FileSystemObject")
             fso.CopyFile fromPath, toPath
+            'fso.MoveFile fromPath, toPath
         End If
          
         ' go to the next row
