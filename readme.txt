@@ -3,8 +3,8 @@
 
 文件说明：
 loop_through_files.xlsm 包含宏（VBA代码），可以导入文本文件到Excel表格。
-create_folder_copy_and_import.xlsm 包含宏（VBA代码），可以复制/移动文件到指定目录（在Excel表格中指定，如果目录不存在则创建），并导入数据文件。
-AIB_20131030.txt, BOI_20131030.txt 等等是数据文件。
+create_folder_copy_and_import.xlsm 包含宏（VBA代码），可以复制/移动文件到指定目录（在Excel表格中指定，如果目录不存在则创建），并导入文本文件到Excel表格。
+AIB_20131030.txt, BOI_20131030.txt 等是数据文件。
 
 使用方法：
 1. 使用Excel 2010打开create_folder_and_copy_file.xlsm，启用并运行宏，则该文件所在目录下的文件就会根据Excel表格中指定的规则（表格第一列为源路径（可使用通配符如*.txt），第二列为目标路径）被复制/移动到目标目录中。
