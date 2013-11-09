@@ -53,11 +53,12 @@ Attribute CopyFile.VB_ProcData.VB_Invoke_Func = "q\n14"
             End If
             
             ' http://msdn.microsoft.com/en-us/library/2wcf3ba6(v=vs.84).aspx
+            ' Create a FileSystemObject for copying or moving files
             ' Use fso.MoveFile to move files or use fso.CopyFile to copy files.
             Dim fso
             Set fso = CreateObject("Scripting.FileSystemObject")
             
-            ' Copy the empty workbook
+            ' Copy the empty workbook to target folder
             fso.CopyFile workbookPathAndName, toPath & "\" & workbookName
   
             ' Copy data files
@@ -65,7 +66,7 @@ Attribute CopyFile.VB_ProcData.VB_Invoke_Func = "q\n14"
             'fso.MoveFile fromPath, toPath
             
             ' http://msdn.microsoft.com/en-us/library/office/ff194819.aspx
-            ' Import text files into the workbook
+            ' Open the workbook in target folder
             Dim ControlFile As String
             ControlFile = ActiveWorkbook.Name
             Workbooks.Open filename:=toPath & "\" & workbookName
