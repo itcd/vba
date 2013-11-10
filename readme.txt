@@ -10,7 +10,7 @@ worksheet.xlsx 是空白worksheet，用于导入.txt文件。
 AIB_20131030.txt, BOI_20131030.txt, AIB_20131107.TXT, BOI_20131107.TXT 是数据文件。
 
 
-示例：
+文件格式与示例：
 create_folder_and_copy_file.xlsm 内容的格式如下：
 第一列是待复制的文件；
 第二列是目标子目录；
