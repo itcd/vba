@@ -1,4 +1,5 @@
 03 April 2014
+
 Whats New:
 1. Improve user experience, more user friendly interface
 2. The macro will now move the data file instead of copying them into each folder. So the user could know if any data file was unused by the Macro.
@@ -8,14 +9,10 @@ Whats New:
 
 复制并导入文件到Excel表格的VBA代码
 
-
 文件说明：
 create_folder_copy_and_import.xlsm 包含宏（VBA代码），可以复制文件到指定目录（在Excel表格中指定，如果目录不存在则创建），并导入文本文件到Excel表格。
-
 worksheet.xlsx 是空白worksheet，用于导入.txt文件。
-
 AIB_20131030.txt, BOI_20131030.txt, AIB_20131107.TXT, BOI_20131107.TXT 是数据文件。
-
 
 文件格式与示例：
 create_folder_and_copy_file.xlsm 内容的格式如下：
@@ -30,7 +27,6 @@ AIB*.txt	AIB	worksheet.xlsx	ref0001
 VBA代码就会将当前目录下所有符合AIB*.txt的文件以及worksheet.xlsx复制到名为AIB的子目录（如果子目录不存在则创建），
 然后将AIB这个子目录下的所有txt文件（AIB\*.txt）导入到刚才复制到AIB目录下的worksheet.xlsx（AIB\worksheet.xlsx），
 导入的时候每个tab的名字是ref0001加上.txt的文件名。
-
 
 使用方法：
 1. 下载整个项目，然后使用 Excel 2010 打开 create_folder_and_copy_file.xlsm;
