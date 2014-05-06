@@ -1,4 +1,11 @@
+03 April 2014
+Whats New:
+1. Improve user experience, more user friendly interface
+2. The macro will now move the data file instead of copying them into each folder. So the user could know if any data file was unused by the Macro.
+3. The Completed Worksheet.xlsx file will now automatically change its name by on the date. eg, in the 20130203 folder, the worksheet name will be xxxx as at 20130203.xlsx (the worksheet.xlsx is now called All segreggated bank files as at.xlsx)
+
 ////////////////////////////////////////////////////////////////
+
 复制并导入文件到Excel表格的VBA代码
 
 
@@ -29,6 +36,5 @@ VBA代码就会将当前目录下所有符合AIB*.txt的文件以及worksheet.xlsx复制到名为AIB的子
 1. 下载整个项目，然后使用 Excel 2010 打开 create_folder_and_copy_file.xlsm;
 2. 启用并运行宏，则该文件所在目录下的文件就会根据Excel表格中指定的规则（表格第一列为源路径（可使用通配符如*.txt），
 第二列为目标路径）被复制到目标目录中。
-
 
 ////////////////////////////////////////////////////////////////
