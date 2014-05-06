@@ -3,8 +3,7 @@
 Whats New:
 1. Improve user experience, more user friendly interface
 2. The macro will now move the data file instead of copying them into each folder. So the user could know if any data file was unused by the Macro.
-3. The Completed Worksheet.xlsx file will now automatically change its name by on the date.
-eg. in the 20130203 folder, the worksheet name will be xxxx as at 20130203.xlsx (the worksheet.xlsx is now called All segreggated bank files as at.xlsx)
+3. The Completed Worksheet.xlsx file will now automatically change its name by on the date. eg. in the 20130203 folder, the worksheet name will be xxxx as at 20130203.xlsx (the worksheet.xlsx is now called All segreggated bank files as at.xlsx)
 
 ////////////////////////////////////////////////////////////////
 
